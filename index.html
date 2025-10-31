@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Choose Your Flowers</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>🌼 Select Flowers for Your Bouquet</h2>
+  <div id="flowers" class="grid"></div>
+
+  <h3>Your Bouquet</h3>
+  <ul id="cart"></ul>
+  <p>Total: ₹<span id="total">0</span></p>
+  <button onclick="checkout()">Checkout</button>
+
+  <script src="app.js"></script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCwBQpHYB94mdx3tZIXUi9OPfeY1fOh1-w",
+    authDomain: "flower-shop-eb0b7.firebaseapp.com",
+    projectId: "flower-shop-eb0b7",
+    storageBucket: "flower-shop-eb0b7.firebasestorage.app",
+    messagingSenderId: "1015912919925",
+    appId: "1:1015912919925:web:cfc0fea199d3624bfa593c",
+    measurementId: "G-GSEFYMWPV6"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>
